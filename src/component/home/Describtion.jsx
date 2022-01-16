@@ -32,6 +32,28 @@ const Describtion = (props) => {
             className="fill-000000"
           />
         </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          baseProfile="tiny"
+          version="1.2"
+          viewBox="0 0 24 24"
+          xmlSpace="preserve"
+          className="w-7 h-7 "
+        >
+          <path
+            d="M8 19H5V9h3v10zm11 0h-3v-5.342c0-1.392-.496-2.085-1.479-2.085-.779 0-1.273.388-1.521 1.165V19h-3s.04-9 0-10h2.368l.183 2h.062c.615-1 1.598-1.678 2.946-1.678 1.025 0 1.854.285 2.487 1.001.637.717.954 1.679.954 3.03V19z"
+            fill="#ffffff"
+            className="fill-000000"
+          />
+          <ellipse
+            cx="6.5"
+            cy="6.5"
+            rx="1.55"
+            ry="1.5"
+            fill="#ffffff"
+            className="fill-000000"
+          />
+        </svg>
         <div className="px-3 py-1 pointer flex items-center  text-base font-bold text-slate-200 bg-slate-600 hover:bg-slate-700  rounded-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +75,9 @@ const Describtion = (props) => {
               d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <div className="pl-2">Morooco , Rabat </div>
+          <div className="pl-2">
+            Morooco , Rabat <span className="w-1 h-1 bg-gray-600">.</span>{" "}
+          </div>
         </div>
       </div>
     </div>
