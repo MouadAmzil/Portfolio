@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    @apply bg-gradient-to-r from-slate-800 to-gray-900 min-h-screen
+    @apply bg-gradient-to-r dark:from-slate-800 dark:to-gray-900 min-h-screen from-slate-50 to-gray-100
 }
 #toggle:checked~label div >div.toggle-dot{
     @apply translate-x-3 

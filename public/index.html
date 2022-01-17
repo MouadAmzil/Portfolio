@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="utf-8" />
@@ -41,6 +41,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script>
+    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+    console.log(darkThemeMq);
+    darkThemeMq ? document.querySelector("html").classList.add("dark") : document.querySelector("html").classList.remove("dark");
+  </script>
 </body>
 
 </html>

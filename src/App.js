@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from './component/Header'
 import {
   BrowserRouter,
@@ -11,8 +12,10 @@ import Talk from './component/talk/Talk';
 
 function App() {
 
+
+
   return (
-    <div className="  px-44 text-sky-100 body">
+    <div className="dark:text-sky-100 text-slate-700 lg:px-52 md:px-20 body">
       <BrowserRouter>
         <Header />
         <Routes>
@@ -22,7 +25,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-
     </div>
   );
 }

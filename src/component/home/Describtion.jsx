@@ -3,13 +3,13 @@ import React from "react";
 const Describtion = (props) => {
   return (
     <div>
-      <div className="px-2 flex items-center space-x-3">
+      <div className="px-2 flex items-center space-x-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version={1.0}
           viewBox="0 0 32 32"
           xmlSpace="preserve"
-          className="w-7 h-7 "
+          className="w-7 h-7  cursor-pointer transform hover:translate-y-1 duration-300 inline-flex items-center justify-center p-1 bg-indigo-500 rounded-md shadow-lg"
         >
           <path
             clipRule="evenodd"
@@ -19,12 +19,11 @@ const Describtion = (props) => {
             className="fill-181616"
           />
         </svg>
-
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 56.693 56.693"
           xmlSpace="preserve"
-          className="w-7 h-7 "
+          className="w-7 h-7  cursor-pointer transform hover:translate-y-1 duration-300 inline-flex items-center justify-center p-1 bg-indigo-500 rounded-md shadow-lg"
         >
           <path
             d="M52.837 15.065a20.11 20.11 0 0 1-5.805 1.591 10.125 10.125 0 0 0 4.444-5.592 20.232 20.232 0 0 1-6.418 2.454 10.093 10.093 0 0 0-7.377-3.192c-5.581 0-10.106 4.525-10.106 10.107 0 .791.089 1.562.262 2.303-8.4-.422-15.848-4.445-20.833-10.56a10.055 10.055 0 0 0-1.368 5.082c0 3.506 1.784 6.6 4.496 8.412a10.078 10.078 0 0 1-4.578-1.265l-.001.128c0 4.896 3.484 8.98 8.108 9.91a10.162 10.162 0 0 1-4.565.172c1.287 4.015 5.019 6.938 9.441 7.019a20.276 20.276 0 0 1-12.552 4.327c-.815 0-1.62-.048-2.411-.142a28.6 28.6 0 0 0 15.493 4.541c18.591 0 28.756-15.4 28.756-28.756 0-.438-.009-.875-.028-1.309a20.47 20.47 0 0 0 5.042-5.23z"
@@ -38,7 +37,7 @@ const Describtion = (props) => {
           version="1.2"
           viewBox="0 0 24 24"
           xmlSpace="preserve"
-          className="w-7 h-7 "
+          className="w-7 h-7  cursor-pointer transform hover:translate-y-1 duration-300 inline-flex items-center justify-center p-1 bg-indigo-500 rounded-md shadow-lg"
         >
           <path
             d="M8 19H5V9h3v10zm11 0h-3v-5.342c0-1.392-.496-2.085-1.479-2.085-.779 0-1.273.388-1.521 1.165V19h-3s.04-9 0-10h2.368l.183 2h.062c.615-1 1.598-1.678 2.946-1.678 1.025 0 1.854.285 2.487 1.001.637.717.954 1.679.954 3.03V19z"
@@ -54,7 +53,7 @@ const Describtion = (props) => {
             className="fill-000000"
           />
         </svg>
-        <div className="px-3 py-1 pointer flex items-center  text-base font-bold text-slate-200 bg-slate-600 hover:bg-slate-700  rounded-full">
+        <div className="px-3 py-1 cursor-pointer flex items-center  text-base font-bold text-slate-200 bg-slate-600 hover:bg-slate-700  rounded-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-3 w-3 inline-block "
@@ -76,9 +75,24 @@ const Describtion = (props) => {
             />
           </svg>
           <div className="pl-2">
-            Morooco , Rabat <span className="w-1 h-1 bg-gray-600">.</span>{" "}
+            Morooco , Rabat{" "}
+            <div className="w-2 h-2 ml-2 bg-gray-400 dark:bg-white inline-block rounded-full overflow-hidden"></div>{" "}
           </div>
         </div>
+      </div>
+      <div className="box-border">
+        <h1 className="py-4 font-bold text-4xl">
+          Hey, I'm{" "}
+          <span className="underline decoration-wavy underline-offset-8 decoration-teal-700">
+            Mouad Amzil
+          </span>{" "}
+          ✌️
+        </h1>
+        <p className="text-lg font-bold font-mono opacity-90">
+          I'm a ~ 21.21648 year old software engineer from the United Kingdom.
+          I'm interested in full stack web development including large scale
+          frontend applications and performant serverside code
+        </p>
       </div>
     </div>
   );

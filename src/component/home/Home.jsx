@@ -1,11 +1,13 @@
 import React from "react";
 import Describtion from "./Describtion";
+import WhatDoIDo from "./WhatDoIDo";
 
 function Home() {
   return (
     <div className="py-8">
-      <div className="text-6xl text-sky-400">
+      <div className="font-mono">
         <Describtion />
+        <WhatDoIDo />
       </div>
     </div>
   );
