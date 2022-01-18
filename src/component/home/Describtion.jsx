@@ -74,9 +74,9 @@ const Describtion = (props) => {
               d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <div className="pl-2">
-            Morooco , Rabat{" "}
-            <div className="w-2 h-2 ml-2 bg-gray-400 dark:bg-white inline-block rounded-full overflow-hidden"></div>{" "}
+          <div className="pl-2 sm:text-sm">
+            Morooco , Rabat
+            <div className="w-2 h-2 ml-2 hidden bg-gray-400 dark:bg-white md:inline-block rounded-full overflow-hidden"></div>{" "}
           </div>
         </div>
       </div>
@@ -89,8 +89,8 @@ const Describtion = (props) => {
           ✌️
         </h1>
         <p className="text-lg font-bold font-mono opacity-90">
-          I'm a ~ 21.21648 year old software engineer from the United Kingdom.
-          I'm interested in full stack web development including large scale
+          I'm a ~ 21.21648 year old software engineer from the Morocco. I'm
+          interested in full stack web development including large scale
           frontend applications and performant serverside code
         </p>
       </div>

@@ -4,7 +4,7 @@ import WhatDoIDo from "./WhatDoIDo";
 
 function Home() {
   return (
-    <div className="py-8">
+    <div className="margin-lg-screen ">
       <div className="font-mono">
         <Describtion />
         <WhatDoIDo />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from './component/Header'
 import {
   BrowserRouter,
@@ -15,17 +15,19 @@ function App() {
 
 
   return (
-    <div className="dark:text-sky-100 text-slate-700 lg:px-52 md:px-20 body">
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route path="/about" element={<About />} />
-            <Route path="Talk" element={<Talk />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <>
+      <div className="body">
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />}>
+              <Route path="/about" element={<About />} />
+              <Route path="Talk" element={<Talk />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </>
   );
 }
 

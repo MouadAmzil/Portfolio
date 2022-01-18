@@ -10,27 +10,51 @@ function Header() {
   };
 
   return (
-    <div className="py-10 flex  items-center">
-      <div className="text-sm flex-1">
-        <ul className="flex font-mono -space-x-1 underline">
-          <li>
-            <Link className="py-3 md:pr-8" to="/">
+    <div className="fucking-navbar">
+      <div className="text-sm hidden md:flex ">
+        <ul className="flex font-mono space-x-1 underline">
+          <li className="">
+            <Link
+              className="hover:bg-slate-900 rounded-full py-3 md:px-4"
+              to="/"
+            >
               /
             </Link>
           </li>
           <li>
-            <Link className="py-3 md:px-5" to="/about">
+            <Link
+              className="hover:bg-slate-900 rounded-full py-3 md:px-4"
+              to="/about"
+            >
               /about
             </Link>
           </li>
           <li>
-            <Link className="py-md:px-5" to="/talk">
+            <Link
+              className="hover:bg-slate-900 rounded-full py-3 md:px-4"
+              to="/talk"
+            >
               /talk
             </Link>
           </li>
         </ul>
       </div>
-      <div className="flex justify-end items-center ">
+      <div className="md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-7 w-7"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fillRule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clipRule="evenodd"
+            fill="#6366f1"
+          />
+        </svg>
+      </div>
+      <div className="flex justify-end items-center  ">
         <div className="font-mono font-bold dark:text-gray-100 opacity-75 hover:opacity-100 capitalize py- rounded-full">
           <h2 className="ml-3 inline-block tracking-wider 	">
             Not playing anything
@@ -52,23 +76,23 @@ function Header() {
             />
           </svg>
         </div>
-        <div className="mx- cursor-pointer ">
-          <div>
-            <input
-              type="checkbox"
-              id="toggle"
-              className="hidden"
-              onChange={changeTheme}
-            />
-            <label htmlFor="toggle">
-              <div className="w-10 h-5 flex items-center rounded-full bg-white p-1">
-                <div
-                  className="toggle-dot w-4 h-4 rounded-full border-s late-50 cursor-pointer
+      </div>
+      <div className="cursor-pointer ">
+        <div className="flex justify-end ">
+          <input
+            type="checkbox"
+            id="toggle"
+            className="hidden"
+            onChange={changeTheme}
+          />
+          <label htmlFor="toggle">
+            <div className="w-10 h-5 flex items-center rounded-full bg-white p-1">
+              <div
+                className="toggle-dot w-4 h-4 rounded-full border-s late-50 cursor-pointer
                  bg-slate-900 shadow-md transform duration-300"
-                ></div>
-              </div>
-            </label>
-          </div>
+              ></div>
+            </div>
+          </label>
         </div>
       </div>
     </div>
