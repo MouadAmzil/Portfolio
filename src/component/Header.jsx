@@ -8,38 +8,22 @@ function Header() {
       ? _html.classList.remove("dark")
       : _html.classList.add("dark");
   };
+  const ShowNav = () => {
+    document.getElementById("togglenav").classList.add("nav-in-sm-screen"); //ulInSmallScreen
+    document.getElementById("ul_nav").classList.add("ulInSmallScreen"); //ulInSmallScreen
+    document.querySelector("#togglenav div").classList.remove("hidden");
+    document.querySelector("#togglenav div").classList.add("flex");
+  };
+  const RemoveNav = () => {
+    document.getElementById("togglenav").classList.remove("nav-in-sm-screen"); //ulInSmallScreen
+    document.getElementById("ul_nav").classList.remove("ulInSmallScreen"); //ulInSmallScreen
+    document.querySelector("#togglenav div").classList.remove("flex");
+    document.querySelector("#togglenav div").classList.add("hidden");
+  };
 
   return (
     <div className="fucking-navbar">
-      <div className="text-sm hidden md:flex ">
-        <ul className="flex font-mono space-x-1 underline">
-          <li className="">
-            <Link
-              className="hover:bg-slate-900 rounded-full py-3 md:px-4"
-              to="/"
-            >
-              /
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="hover:bg-slate-900 rounded-full py-3 md:px-4"
-              to="/about"
-            >
-              /about
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="hover:bg-slate-900 rounded-full py-3 md:px-4"
-              to="/talk"
-            >
-              /talk
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="md:hidden">
+      <div className="md:hidden cursor-pointer" onClick={ShowNav}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-7 w-7"
@@ -53,6 +37,54 @@ function Header() {
             fill="#6366f1"
           />
         </svg>
+      </div>
+      <div id="togglenav" className="text-sm md:flex">
+        {/* TODO: This for close nav in small screen */}
+        <div className="hidden justify-end md:hidden" onClick={RemoveNav}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-7 w-7 bg-indigo-500 cursor-pointer text-slate-100"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <ul
+          className="hidden md:flex font-mono space-x-1 underline"
+          id="ul_nav"
+        >
+          <li className="blur-none">
+            <Link
+              className="md:hover:bg-slate-900 rounded-full py-3 md:px-4"
+              to="/"
+            >
+              /
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="md:hover:bg-slate-900 rounded-full py-3 md:px-4"
+              to="/about"
+            >
+              /about
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="md:hover:bg-slate-900 rounded-full py-3 md:px-4"
+              to="/talk"
+            >
+              /talk
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="flex justify-end items-center  ">
         <div className="font-mono font-bold dark:text-gray-100 opacity-75 hover:opacity-100 capitalize py- rounded-full">

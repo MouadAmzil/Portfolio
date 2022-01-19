@@ -16,9 +16,21 @@
 }
 
 .fucking-navbar{
-    @apply py-5 px-5 z-50 backdrop-blur-sm w-full md:bg-transparent flex justify-between items-center
+    @apply py-5 px-5 z-30 backdrop-blur-sm w-full md:bg-transparent flex justify-between items-center
     lg:px-52 md:px-20 md:py-10  fixed md:static
 
 }
+.nav-in-sm-screen{
+    @apply transition duration-300 ease-in-out inline-block absolute md:static top-0 left-0 backdrop-opacity-90 bg-white/90 w-2/4 md:w-auto z-50 md:p-0  h-screen md:h-auto 
+}
+
+.ulInSmallScreen{
+    @apply transition duration-300 ease-in-out inline-block space-y-10 dark:text-stone-800 p-24
+}
+
+body{
+    height: 20000px;
+}
+
 
 /* ~ lable > div.toggle-dot */
