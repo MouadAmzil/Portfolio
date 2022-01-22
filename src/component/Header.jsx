@@ -62,7 +62,7 @@ function Header() {
         >
           <li className="blur-none">
             <Link
-              className="md:hover:bg-slate-900 rounded-full py-3 md:px-4"
+              className="dark:md:hover:bg-slate-900 hover:bg-blue-700/5 rounded-full py-3 md:px-4"
               to="/"
             >
               /
@@ -70,7 +70,7 @@ function Header() {
           </li>
           <li>
             <Link
-              className="md:hover:bg-slate-900 rounded-full py-3 md:px-4"
+              className="dark:md:hover:bg-slate-900 hover:bg-blue-700/5 rounded-full py-3 md:px-4"
               to="/about"
             >
               /about
@@ -78,7 +78,7 @@ function Header() {
           </li>
           <li>
             <Link
-              className="md:hover:bg-slate-900 rounded-full py-3 md:px-4"
+              className="dark:md:hover:bg-slate-900 hover:bg-blue-700/5 rounded-full py-3 md:px-4"
               to="/talk"
             >
               /talk
@@ -118,10 +118,10 @@ function Header() {
             onChange={changeTheme}
           />
           <label htmlFor="toggle">
-            <div className="w-10 h-5 flex items-center rounded-full bg-white p-1">
+            <div className="w-10 h-5 flex items-center rounded-full bg-blue-700/5 dark:bg-white p-1">
               <div
-                className="toggle-dot w-4 h-4 rounded-full border-s late-50 cursor-pointer
-                 bg-slate-900 shadow-md transform duration-300"
+                className="toggle-dot w-4 h-4 rounded-full border-s late-50 cursor-pointer bg-blue-900/80
+                 dark:bg-slate-900 shadow-md transform duration-300"
               ></div>
             </div>
           </label>

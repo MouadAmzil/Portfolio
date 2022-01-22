@@ -2,7 +2,7 @@ import React from "react";
 
 const Describtion = (props) => {
   return (
-    <div>
+    <div className="py-4">
       <div className="px-2 flex items-center space-x-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -83,12 +83,12 @@ const Describtion = (props) => {
       <div className="box-border">
         <h1 className="py-4 font-bold text-4xl">
           Hey, I'm{" "}
-          <span className="underline decoration-wavy underline-offset-8 decoration-teal-700">
+          <span className="underline decoration-wavy underline-offset-8 text-indigo-500 dark:text-sky-100 decoration-indigo-700">
             Mouad Amzil
           </span>{" "}
           ✌️
         </h1>
-        <p className="text-lg font-bold font-mono opacity-90">
+        <p className="pargh">
           I'm a ~ 21.21648 year old software engineer from the Morocco. I'm
           interested in full stack web development including large scale
           frontend applications and performant serverside code

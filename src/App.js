@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Header from './component/Header'
+import Footer from './component/Footer';
 import {
   BrowserRouter,
   Routes,
@@ -20,11 +21,11 @@ function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />}>
-              <Route path="/about" element={<About />} />
-              <Route path="Talk" element={<Talk />} />
-            </Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="Talk" element={<Talk />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </div>
     </>

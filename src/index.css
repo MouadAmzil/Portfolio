@@ -1,36 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.body{
-    @apply bg-gradient-to-r dark:from-slate-800 dark:to-gray-900 min-h-screen 
-    from-slate-50 to-gray-100 dark:text-sky-100 text-slate-700 
-}
-#toggle:checked~label div >div.toggle-dot{
-    @apply translate-x-3 
-
-}
-.margin-lg-screen{
-    @apply lg:px-52 px-10  md:px-20 py-32
-    
-}
-
-.fucking-navbar{
-    @apply py-5 px-5 z-30 backdrop-blur-sm w-full md:bg-transparent flex justify-between items-center
-    lg:px-52 md:px-20 md:py-10  fixed md:static
-
-}
-.nav-in-sm-screen{
-    @apply transition duration-300 ease-in-out inline-block absolute md:static top-0 left-0 backdrop-opacity-90 bg-white/90 w-2/4 md:w-auto z-50 md:p-0  h-screen md:h-auto 
-}
-
-.ulInSmallScreen{
-    @apply transition duration-300 ease-in-out inline-block space-y-10 dark:text-stone-800 p-24
-}
-
-body{
-    height: 20000px;
-}
-
-
-/* ~ lable > div.toggle-dot */
+.body{ @apply bg-gradient-to-r dark:from-slate-800 dark:to-gray-900 min-h-screen from-slate-50 to-gray-100 dark:text-sky-100 text-slate-700 }
+#toggle:checked~label div >div.toggle-dot{ @apply translate-x-3 }
+.margin-lg-screen{  @apply lg:px-52 px-10  md:px-20 py-32 }
+.fucking-navbar{  @apply py-5 px-5 z-30 backdrop-blur-sm w-full md:bg-transparent flex justify-between items-center lg:px-52 md:px-20 md:py-10  fixed md:static}
+.nav-in-sm-screen{ @apply transition duration-300 ease-in-out inline-block absolute md:static top-0 left-0 backdrop-opacity-90 bg-white/90 w-2/4 md:w-auto z-50 md:p-0  h-screen md:h-auto }
+.ulInSmallScreen{  @apply transition duration-300 ease-in-out inline-block space-y-10 dark:text-stone-800 p-24}
+.pargh{ @apply text-base font-bold font-mono opacity-90}
+.paddnigFooter {@apply lg:px-52 px-10  md:px-20 opacity-80}
