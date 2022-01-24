@@ -64,6 +64,7 @@ function Header() {
             <Link
               className="dark:md:hover:bg-slate-900 hover:bg-blue-700/5 rounded-full py-3 md:px-4"
               to="/"
+              onClick={RemoveNav}
             >
               /
             </Link>
@@ -72,6 +73,7 @@ function Header() {
             <Link
               className="dark:md:hover:bg-slate-900 hover:bg-blue-700/5 rounded-full py-3 md:px-4"
               to="/about"
+              onClick={RemoveNav}
             >
               /about
             </Link>
@@ -80,6 +82,7 @@ function Header() {
             <Link
               className="dark:md:hover:bg-slate-900 hover:bg-blue-700/5 rounded-full py-3 md:px-4"
               to="/talk"
+              onClick={RemoveNav}
             >
               /talk
             </Link>
