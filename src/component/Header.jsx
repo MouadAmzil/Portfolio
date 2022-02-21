@@ -16,7 +16,7 @@ function Header() {
   };
   const RemoveNav = () => {
     document.getElementById("togglenav").classList.remove("nav-in-sm-screen"); //ulInSmallScreen
-    document.getElementById("ul_nav").classList.remove("ulInSmallScreen"); //ulInSmallScreen
+    document.getElementById("ul_nav").classList.remove("ulInSmallScreen"); //ulInSmallScreen on
     document.querySelector("#togglenav div").classList.remove("flex");
     document.querySelector("#togglenav div").classList.add("hidden");
   };
