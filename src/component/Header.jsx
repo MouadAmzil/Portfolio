@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 function Header() {
   const changeTheme = (e) => {
-    console.log(e.target.checked);
     let _html = document.querySelector("html");
     e.target.checked
       ? _html.classList.remove("dark")
@@ -16,7 +15,7 @@ function Header() {
   };
   const RemoveNav = () => {
     document.getElementById("togglenav").classList.remove("nav-in-sm-screen"); //ulInSmallScreen
-    document.getElementById("ul_nav").classList.remove("ulInSmallScreen"); //ulInSmallScreen on
+    document.getElementById("ul_nav").classList.remove("ulInSmallScreen"); //ulInSmallScreen
     document.querySelector("#togglenav div").classList.remove("flex");
     document.querySelector("#togglenav div").classList.add("hidden");
   };

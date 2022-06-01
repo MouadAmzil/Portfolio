@@ -12,9 +12,6 @@ import Talk from './component/talk/Talk';
 
 
 function App() {
-
-
-
   return (
     <>
       <div className="body">
