@@ -15,15 +15,17 @@ function App() {
   return (
     <>
       <div className="body">
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="Talk" element={<Talk />} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
+        <div className='container-body '>
+          <BrowserRouter>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="Talk" element={<Talk />} />
+            </Routes>
+            <Footer />
+          </BrowserRouter>
+        </div>
       </div>
     </>
   );

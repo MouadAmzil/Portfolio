@@ -98,7 +98,8 @@ const Describtion = (props) => {
               />
             </svg>
             <div className="pl-2 sm:text-sm">
-              Morooco , Rabat
+              <span className="location-address">Morooco , Rabat</span>
+              
               <div className="w-2 h-2 ml-2 hidden bg-gray-400 dark:bg-white md:inline-block rounded-full overflow-hidden"></div>{" "}
             </div>
           </div>

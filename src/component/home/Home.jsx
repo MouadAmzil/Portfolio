@@ -16,8 +16,8 @@ import {
   SiBootstrap,
   SiTailwindcss,
   SiNpm,
-  SiNodedotjs,
-  SiExpress,
+  SiDotnet,
+  SiAngular,
   SiPhp,
   SiRedux,
   SiReact,
@@ -77,8 +77,8 @@ function Home() {
             <ListItem icon={SiBootstrap} text={"Bootstrap "} />
             <ListItem icon={SiTailwindcss} text={"Tailwindcss "} />
             <ListItem icon={SiNpm} text={"NPM "} />
-            <ListItem icon={SiNodedotjs} text={"Node.js "} />
-            <ListItem icon={SiExpress} text={"Express.js "} />
+            <ListItem icon={SiDotnet} text={".Net "} />
+            <ListItem icon={SiAngular} text={"Angular"} />
             <ListItem icon={SiPhp} text={"PHP"} />
             <ListItem icon={SiRedux} text={"Redux.js "} />
             <ListItem icon={SiReact} text={"React.js "} />

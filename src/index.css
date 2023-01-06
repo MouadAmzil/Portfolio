@@ -1,7 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.body{ @apply bg-gradient-to-r dark:from-slate-800 dark:to-gray-900 min-h-screen from-slate-50 to-gray-100 dark:text-sky-100 text-slate-700 }
+.container-body{
+    max-width: 1300px !important;
+}
+.location-address{
+word-break: break-all;
+ white-space: pre;
+}
+.body{ @apply items-center flex flex-col bg-gradient-to-r dark:from-slate-800 dark:to-gray-900 min-h-screen from-slate-50 to-gray-100 dark:text-sky-100 text-slate-700 }
 #toggle:checked~label div >div.toggle-dot{ @apply translate-x-3 }
 .margin-lg-screen{  @apply lg:px-52 px-10  md:px-20 py-32 }
 .fucking-navbar{  @apply py-5 px-5 z-30 backdrop-blur-sm w-full md:bg-transparent flex justify-between items-center lg:px-52 md:px-20 md:py-10  fixed md:static}
